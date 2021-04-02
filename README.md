@@ -16,7 +16,7 @@ which limits the overall count of data lines to 8.
 
 ## Example
 
-In the Repository xxx I supply an example application that will go trough a few test patterns followed by a loop of the example animations.
+In the Repository https://github.com/ForsakenNGS/PicoLedExample I supply an example application that will go trough a few test patterns followed by a loop of the example animations.
 
 ## API
 
