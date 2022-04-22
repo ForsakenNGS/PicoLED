@@ -64,7 +64,7 @@ namespace PicoLed {
             return (struct Color){ .red = value, .green = value, .blue = value, .white = 0 };
         }
         uint8_t quadrant = hue / 43;
-        uint8_t remainder = hue - quadrant * 43 * 6;
+        uint8_t remainder = (hue - (quadrant * 43)) * 6;
         uint8_t p = (value * (255 - saturation)) >> 8;
         uint8_t q = (value * (255 - ((saturation * remainder) >> 8))) >> 8;
         uint8_t t = (value * (255 - ((saturation * (255 - remainder)) >> 8))) >> 8;
